@@ -1,0 +1,18 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:HasExtensions;1",
+    "@type": "Interface",
+    "displayName": "Has Extensions",
+    "description": "Element that can be extended by proprietary extensions. Abstract interface",
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "extensions",
+            "displayName": "extended by",
+            "writable": true,
+            "description": "An extension of the element.",
+            "target": "dtmi:digitaltwins:aas:Extension;1"
+        }
+    ]
+}

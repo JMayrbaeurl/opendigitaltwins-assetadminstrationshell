@@ -1,0 +1,17 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:aas:AssetInformation;1",
+  "@type": "Interface",
+  "displayName": "Asset information",
+  "description": "In AssetInformation identifying meta data of the asset that is represented by an AAS is defined. The asset may either represent an asset type or an asset instance.",
+  "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "assetKind",
+      "displayName": "Asset kind",
+      "description": "Denotes whether the Asset is of kind “Type” or “Instance”.",
+      "schema": "dtmi:digitaltwins:aas:AssetKind;1"
+    }
+  ]
+}

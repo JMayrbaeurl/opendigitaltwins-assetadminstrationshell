@@ -1,0 +1,40 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:Extension;1",
+    "@type": "Interface",
+    "displayName": "Extension",
+    "description": "Single extension of an element",
+    "extends": ["dtmi:digitaltwins:aas:HasSemantics;1"],
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "name",
+            "description": "An extension of the element.  Constraint AASd-077: The name of an extension within HasExtensions needs to be unique.",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "valueType",
+            "description": "Type of the value of the extension.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "value",
+            "description": "Value of the extension",
+            "displayName": "Value",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "refersTo",
+            "description": "Reference to an element the extension refers to.",
+            "displayName": "Refers to",
+            "schema": "string",
+            "writable": true
+        }
+    ]
+}

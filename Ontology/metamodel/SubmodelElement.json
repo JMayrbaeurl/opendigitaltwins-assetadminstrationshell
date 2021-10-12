@@ -1,0 +1,12 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:SubmodelElement;1",
+    "@type": "Interface",
+    "displayName": "SubmodelElement",
+    "comment": "**abstract** Remark: Optional properties have not been implemented in this release: IdenReferable, HasKind, HasSemantics, Quantifiable, HasDataSpecification",
+    "contents": [
+      {
+      }
+    ]
+  }
+  

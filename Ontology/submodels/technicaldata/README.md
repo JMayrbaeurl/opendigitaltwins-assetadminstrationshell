@@ -1,0 +1,1 @@
+# opendigitaltwins-assetadminstrationshell submodel technicaldata

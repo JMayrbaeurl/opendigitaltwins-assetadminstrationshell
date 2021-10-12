@@ -1,0 +1,48 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:Identifier;1",
+    "@type": "Interface",
+    "displayName": "Identifier",
+    "description": "Used to uniquely identify an entity by using an identifier.",
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "idType",
+            "displayName": "Id type",
+            "description": "Type of the Identifier, e.g. IRI, IRDI etc. The supported Identifier types are defined in the enumeration “IdentifierType",
+            "comment": "Mandatory",
+            "writable": true,
+            "schema": {
+                "@type": "Enum",
+                "description": "IdentifierType - Enumeration of different types of Identifiers for global identification",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "IRDI",
+                        "enumValue": "IRDI",
+                        "description": "IRDI according to ISO29002-5 as an Identifier scheme for properties and classifications. "
+                    },
+                    {
+                        "name": "IRI",
+                        "enumValue": "IRI",
+                        "description": "IRI according to Rfc 3987. Every URI is an IRI."
+                    },
+                    {
+                        "name": "Custom",
+                        "enumValue": "Custom",
+                        "description": "Custom identifiers like GUIDs (globally unique identifiers)"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "name" : "id",
+            "description": "Globally unique identifier of the element",
+            "comment": "Mandatory",
+            "writable": true,
+            "schema": "string"
+        }
+    ]
+}

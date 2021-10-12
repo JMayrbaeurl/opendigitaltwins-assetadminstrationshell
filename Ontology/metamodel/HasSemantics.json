@@ -1,0 +1,18 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:HasSemantics;1",
+    "@type": "Interface",
+    "displayName": "Has Semantics",
+    "description": "Element that can have a semantic definition. Abstract interface",
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+            "@type": "Property",
+            "name" : "semanticId",
+            "displayName": "Semantic Id",
+            "description": "Identifier of the semantic definition of the element. It is called semantic id of the element.",
+            "writable": true,
+            "schema": "string"
+        }
+    ]
+}

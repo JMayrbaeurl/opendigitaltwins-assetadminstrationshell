@@ -1,0 +1,25 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:Identifiable;1",
+    "@type": "Interface",
+    "displayName": "Identifiable",
+    "description": "An identifiable element is a referable with a globally unique identifier (Identifier). To reference an identifiable only the global id (identification/id) shall be used because the idShort is not unique for an identifiable. Identifiables may have administrative information like version etc",
+    "extends": ["dtmi:digitaltwins:aas:Referable;1"],
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+                "@type": "Component",
+                "name": "administration",
+                "displayName": "Administration",
+                "description": "Administrative information of an identifiable element.",
+                "schema": "dtmi:digitaltwins:aas:AdministrationInformation;1"
+        },
+        {
+            "@type": "Component",
+            "name": "identification",
+            "displayName": "Identification",
+            "description": "The globally unique identification of the element.",
+            "schema": "dtmi:digitaltwins:aas:Identifier;1"
+        }
+    ]
+}

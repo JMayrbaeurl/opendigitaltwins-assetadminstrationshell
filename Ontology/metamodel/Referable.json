@@ -1,0 +1,42 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:Referable;1",
+    "@type": "Interface",
+    "displayName": "Referable",
+    "description": "An element that is referable by its idShort. This id is not globally unique. This id is unique within the name space of the element.",
+    "extends": ["dtmi:digitaltwins:aas:HasExtensions;1"],
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "idShort",
+            "description": "In case of identifiables this attribute is a short name of the element. In case of referable this id is an identifying string of the element within its name space.",
+            "comment": "Mandatory",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "displayName",
+            "displayName": "Display name",
+            "description": "Display name. Can be provided in several languages.",
+            "schema": "multiLineString",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "category",
+            "displayName": "Category",
+            "description": "The category is a value that gives further meta information w.r.t. to the class of the element. It affects the expected existence of attributes and the applicability of constraints.",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "description",
+            "displayName": "Description",
+            "description": "Description or comments on the element. The description can be provided in several languages.",
+            "writable": true,
+            "schema": "multiLineString"
+        }
+    ]
+}

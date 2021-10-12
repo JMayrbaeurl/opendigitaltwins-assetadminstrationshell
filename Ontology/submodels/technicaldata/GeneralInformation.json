@@ -15,14 +15,11 @@
             "schema": "string"
         },
         {
-            "@type": "Property",
+            "@type": "Component",
             "name": "ManufacturerLogo",
-            "writable": true,
             "description": "Imagefile for logo of manufacturer provided in common format (.png, .jpg).",
             "displayName": "Manufacturer Logo",
-            "schema": {
-                ??? File MIME
-            }
+            "schema": "dtmi:digitaltwins:aas:File;1"
         },
         {
             "@type": "Property",
@@ -49,14 +46,11 @@
             "schema": "string"
         },
         {
-            "@type": "Property",
+            "@type": "Component",
             "name": "ProductImage",
-            "writable": true,
             "description": "Image file for associated product provided in common format (.png, .jpg).",
             "displayName": "Product Image",
-            "schema": {
-                ??? File
-            }
+            "schema": "dtmi:digitaltwins:aas:File;1"
         }
     ]
 }

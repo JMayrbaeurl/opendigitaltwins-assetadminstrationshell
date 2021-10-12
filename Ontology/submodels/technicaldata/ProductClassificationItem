@@ -1,0 +1,34 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:ProductClassificationItem;1",
+    "@type": "Interface",
+    "displayName": "Product Classification",
+    "description": "Single product classification by association with product class in a particular classification system or property dictionary",
+    "comment": "According Industrie 4.0 specification at https://www.zvei.org/fileadmin/user_upload/Presse_und_Medien/Publikationen/2020/Dezember/Submodel_Templates_of_the_Asset_Administration_Shell/201117_I40_ZVEI_SG2_Submodel_Spec_ZVEI_Technical_Data_Version_1_1.pdf",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "ProductClassificationSystem",
+            "writable": true,
+            "description": "Common name of the classification system",
+            "displayName": "Name of the clasification system",
+            "schema": "string"
+        },        
+        {
+            "@type": "Property",
+            "name": "ClassificationSystemVersion",
+            "writable": true,
+            "description": "Common version identifier of the used classification system, in order to distinguish different version of the property dictionary",
+            "displayName": "Version identifier of the used classification system",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "ProductClassId",
+            "writable": true,
+            "description": "Class of the associated product or industrial equipment in the classification system. According to the notation of the system",
+            "displayName": "Class of the product",
+            "schema": "string"
+        }
+    ]
+}

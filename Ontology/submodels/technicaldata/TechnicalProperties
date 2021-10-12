@@ -1,0 +1,40 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:TechnicalProperties;1",
+    "@type": "Interface",
+    "displayName": "Technical Properties",
+    "description": "Individual characteristics that describe the product (industrial equipment) and its technical properties",
+    "comment": "According Industrie 4.0 specification at https://www.zvei.org/fileadmin/user_upload/Presse_und_Medien/Publikationen/2020/Dezember/Submodel_Templates_of_the_Asset_Administration_Shell/201117_I40_ZVEI_SG2_Submodel_Spec_ZVEI_Technical_Data_Version_1_1.pdf",
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "ArbitraryConceptDescription",
+            "displayName": "Arbitrary Concept Description",
+            "writable": true,
+            "description": "Arbitrary SubmodelElement with semanticId possibly referring to a ConceptDescription can be used within the Technical Properties",
+            "target": "dtmi:digitaltwins:aas:SubmodelElement;1"
+        },
+        {
+            "@type": "Relationship",
+            "name": "ArbitraryNonStandardDescription",
+            "displayName": "Arbitrary Description (non standard)",
+            "writable": true,
+            "description": "Represents a SubmodelElement that is not described using a common classification system, a consortium specification, an open community standard, a published manufacturer specification or such",
+            "target": "dtmi:digitaltwins:aas:SubmodelElement;1"
+        },
+        {
+            "@type": "Relationship",
+            "name": "MainSection",
+            "displayName": "main properties",
+            "description": "Main subdivision possibility for properties",
+            "target": "dtmi:digitaltwins:aas:SubmodelElementCollection;1"
+        },
+        {
+            "@type": "Relationship",
+            "name": "SubSection",
+            "displayName": "subordinate properties",
+            "description": "Subordinate subdivision possibility for properties",
+            "target": "dtmi:digitaltwins:aas:SubmodelElementCollection;1"
+        }
+    ]
+}

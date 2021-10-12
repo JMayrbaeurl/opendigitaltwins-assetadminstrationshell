@@ -12,6 +12,31 @@
       "displayName": "Asset kind",
       "description": "Denotes whether the Asset is of kind “Type” or “Instance”.",
       "schema": "dtmi:digitaltwins:aas:AssetKind;1"
+    },
+    {
+      "@type": "Property",
+      "name": "globalAssetId",
+      "description": "Reference to either an Asset object or a global reference to the asset the AAS is representing.",
+      "writable": true,
+      "displayName": "Global Asset Id",
+      "schema": "string"
+    },
+    {
+      "@type": "Relationship",
+      "name": "globalAssetRef",
+      "displayName": "refers to",
+      "description": "Reference to either an Asset object or a global reference to the asset the AAS is representing.",
+      "maxMultiplicity": 1,
+      "writable": true,
+      "target": "dtmi:digitaltwins:aas:Asset;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "specificAssetId",
+      "displayName": "specified by",
+      "description": "Additional domain specific specific, typically proprietary Identifier for the asset like e.g. serial number etc",
+      "writable": true,
+      "target": "dtmi:digitaltwins:aas:IdentifierKeyValuePair;1"
     }
   ]
 }

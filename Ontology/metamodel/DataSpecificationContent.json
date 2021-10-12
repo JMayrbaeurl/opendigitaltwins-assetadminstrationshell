@@ -1,0 +1,7 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:DataSpecificationContent;1",
+    "@type": "Interface",
+    "displayName": "Data specification content",
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell"
+}

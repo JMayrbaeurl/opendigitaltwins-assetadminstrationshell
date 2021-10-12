@@ -4,6 +4,7 @@
   "@type": "Interface",
   "displayName": "Asset Administration Shell",
   "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+  "extends": ["dtmi:digitaltwins:aas:Identifiable;1", "dtmi:digitaltwins:aas:HasDataSpecification;1"],
   "contents": [
     {
       "@type": "Relationship",
@@ -23,6 +24,15 @@
       "maxMultiplicity": 1,
       "writable": true,
       "target" : "dtmi:digitaltwins:aas:Security;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "assetInformation",
+      "displayName": "described by",
+      "description": "Meta information about the asset the AAS is representing",
+      "writable": true,
+      "maxMultiplicity": 1,
+      "target": "dtmi:digitaltwins:aas:AssetInformation;1"
     }
   ]
 }

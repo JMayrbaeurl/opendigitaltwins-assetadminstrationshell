@@ -1,0 +1,16 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:HasDataSpecification;1",
+    "@type": "Interface",
+    "displayName": "Has Data specification",
+    "description": "Element that can be extended by using data specification templates. A data specification template defines a named set of additional attributes an element may or shall have. The data specifications used are explicitly specified with their global id.",
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "dataSpecification",
+            "writable": true,
+            "target": "dtmi:digitaltwins:aas:DataSpecificationContent;1"
+        }
+    ]
+}

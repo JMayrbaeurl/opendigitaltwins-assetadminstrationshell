@@ -1,0 +1,19 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:aas:AssetAdministrationShell;1",
+  "@type": "Interface",
+  "displayName": "Asset Administration Shell",
+  "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "derivedFrom",
+      "description": "The reference to the AAS the AAS was derived from.",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1,
+      "writable": true,
+      "displayName": "derived from",
+      "target": "dtmi:digitaltwins:aas:AssetAdministrationShell;1"
+    }
+  ]
+}

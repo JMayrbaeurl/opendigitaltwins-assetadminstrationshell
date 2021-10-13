@@ -3,6 +3,7 @@
   "@id": "dtmi:digitaltwins:aas:SubmodelElementCollection;1",
   "@type": "Interface",
   "displayName": "Submodel Element Collection",
+  "extends": ["dtmi:digitaltwins:aas:SubmodelElement;1"],
   "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
   "contents": [
     {

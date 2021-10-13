@@ -37,6 +37,24 @@
       "description": "Additional domain specific specific, typically proprietary Identifier for the asset like e.g. serial number etc",
       "writable": true,
       "target": "dtmi:digitaltwins:aas:IdentifierKeyValuePair;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "billOfMaterial",
+      "displayName": "bill of material defined by",
+      "description": "A reference to a Submodel that defines the bill of material of the asset represented by the AAS. This submodel contains a set of entities describing the material used to compose the composite I4.0 Componen",
+      "writable": true,
+      "target": "dtmi:digitaltwins:aas:Submodel;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "defaultThumbnail",
+      "displayName": "Default thumbnail",
+      "description": "Thumbnail of the asset represented by the asset administration shell. Used as default.",
+      "writable": true,
+      "minMultiplicity": 0,
+      "maxMultiplicity": 1,
+      "target": "dtmi:digitaltwins:aas:File;1"
     }
   ]
 }

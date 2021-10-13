@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:TechnicalProperties;1",
+    "@id": "dtmi:digitaltwins:aas:td:TechnicalProperties;1",
     "@type": "Interface",
     "displayName": "Technical Properties",
     "description": "Individual characteristics that describe the product (industrial equipment) and its technical properties",

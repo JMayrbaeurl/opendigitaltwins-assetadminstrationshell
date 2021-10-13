@@ -1,0 +1,22 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:ReferenceElement;1",
+    "@type": "Interface",
+    "displayName": "Reference Element",
+    "description": "A reference element is a data element that defines a logical reference to another element within the same or another AAS or a reference to an external object or entity.",
+    "extends": [
+        "dtmi:digitaltwins:aas:DataElement;1"
+    ],
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "value",
+            "displayName": "Value",
+            "description": "Reference to any other referable element of the same of any other AAS or a reference to an external object or entity",
+            "maxMultiplicity": 1,
+            "writable": true,
+            "comment": "AAS type: Reference",
+            "target": "dtmi:digitaltwins:aas:Reference;1"
+        }
+    ]
+}

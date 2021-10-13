@@ -4,7 +4,10 @@
   "@type": "Interface",
   "displayName": "Asset Administration Shell",
   "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
-  "extends": ["dtmi:digitaltwins:aas:Identifiable;1", "dtmi:digitaltwins:aas:HasDataSpecification;1"],
+  "extends": [
+    "dtmi:digitaltwins:aas:Identifiable;1",
+    "dtmi:digitaltwins:aas:HasDataSpecification;1"
+  ],
   "contents": [
     {
       "@type": "Relationship",
@@ -23,7 +26,7 @@
       "minMultiplicity": 0,
       "maxMultiplicity": 1,
       "writable": true,
-      "target" : "dtmi:digitaltwins:aas:Security;1"
+      "target": "dtmi:digitaltwins:aas:Security;1"
     },
     {
       "@type": "Relationship",
@@ -33,6 +36,14 @@
       "writable": true,
       "maxMultiplicity": 1,
       "target": "dtmi:digitaltwins:aas:AssetInformation;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "submodel",
+      "displayName": "Submodel",
+      "description": "Reference to a submodel of the AAS. A submodel is a description of an aspect of the asset the AAS is representing. The asset of an AAS is typically described by one or more submodels. Temporarily no submodel might be assigned to the AAS.",
+      "writable": true,
+      "target": "dtmi:digitaltwins:aas:Submodel;1"
     }
   ]
 }

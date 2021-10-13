@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:GeneralInformation;1",
+    "@id": "dtmi:digitaltwins:aas:td:GeneralInformation;1",
     "@type": "Interface",
     "displayName": "General Information",
     "description": "General information, for example ordering and manufacturer information",

@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:ProductClassificationItem;1",
+    "@id": "dtmi:digitaltwins:aas:td:ProductClassificationItem;1",
     "@type": "Interface",
     "displayName": "Product Classification",
     "description": "Single product classification by association with product class in a particular classification system or property dictionary",

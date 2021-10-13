@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:FurtherInformation;1",
+    "@id": "dtmi:digitaltwins:aas:td:FurtherInformation;1",
     "@type": "Interface",
     "displayName": "Further Information",
     "description": "Further information on the product, the validity of the information provided and this data record",

@@ -1,0 +1,19 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:OperationVariable;1",
+    "@type": "Interface",
+    "displayName": "Operation variable",
+    "description": "An operation variable is a submodel element that is used as input or output variable of an operation",
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "value",
+            "displayName": "Value",
+            "description": "Describes the needed argument for an operation via a submodel element of kind=Template.",
+            "writable": true,
+            "maxMultiplicity": 1,
+            "target": "dtmi:digitaltwins:aas:SubmodelElement;1"
+        }
+    ]
+}

@@ -16,15 +16,7 @@
             "maxMultiplicity": 1,
             "writable": true,
             "comment": "AAS type: Reference",
-            "target": "dtmi:digitaltwins:aas:Referable;1"
-        }, 
-        {
-            "@type": "Property",
-            "name": "externalValue",
-            "displayName": "external Value",
-            "description": "Reference to any other referable element of the same of any other AAS or a reference to an external object or entity",
-            "writable": true,
-            "schema": "string"
+            "target": "dtmi:digitaltwins:aas:Reference;1"
         }
     ]
 }

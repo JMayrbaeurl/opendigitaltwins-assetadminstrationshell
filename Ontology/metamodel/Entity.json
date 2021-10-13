@@ -42,21 +42,13 @@
             }
         },
         {
-            "@type": "Property",
+            "@type": "Relationship",
             "name": "globalAssetId",
             "description": "Reference to the asset the entity is representing.",
             "writable": true,
             "displayName": "Global Asset Id",
-            "schema": "string"
-          },
-          {
-            "@type": "Relationship",
-            "name": "globalAssetRef",
-            "displayName": "refers to",
-            "description": "Reference to either an Asset object or a global reference to the asset the AAS is representing.",
             "maxMultiplicity": 1,
-            "writable": true,
-            "target": "dtmi:digitaltwins:aas:Asset;1"
+            "target": "dtmi:digitaltwins:aas:Reference;1"
           },
           {
             "@type": "Relationship",

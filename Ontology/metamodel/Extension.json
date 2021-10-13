@@ -29,11 +29,12 @@
             "writable": true
         },
         {
-            "@type": "Property",
+            "@type": "Relationship",
             "name": "refersTo",
             "description": "Reference to an element the extension refers to.",
             "displayName": "Refers to",
-            "schema": "string",
+            "maxMultiplicity": 1,
+            "target": "dtmi:digitaltwins:aas:Reference;1",
             "writable": true
         }
     ]

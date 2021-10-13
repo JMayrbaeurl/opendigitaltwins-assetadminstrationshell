@@ -13,17 +13,8 @@
             "displayName": "depends on",
             "writable": true,
             "description": "A formula may depend on referable or even external global elements that are used in the logical expression. The value of the referenced elements needs to be accessible so that it can be evaluated in the formula to true or false in the",
-            "target": "dtmi:digitaltwins:aas:Referable;1",
+            "target": "dtmi:digitaltwins:aas:Reference;1",
             "comment": "To refer to an external global element use the property 'externalRef'"
-        },
-        {
-            "@type": "Property",
-            "name": "externalRef",
-            "displayName": "External references",
-            "description": "Use for references to external global elements",
-            "comment": "Multiple refs in one line separated by ';'",
-            "writable": true,
-            "schema": "string"
         }
     ]
 }

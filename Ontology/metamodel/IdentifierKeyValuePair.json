@@ -26,21 +26,13 @@
             "description": "The value of the identifier with the corresponding key."
         },
         {
-            "@type": "Property",
+            "@type": "Relationship",
             "name": "externalSubjectId",
             "displayName": "External subject Id",
             "description": "The (external) subject the key belongs to or has meaning to",
             "writable": true,
-            "schema": "string"
-        },
-        {
-            "@type": "Relationship",
-            "name": "externalSubjectRef",
-            "displayName": "External subject reference",
-            "description": "The (external) subject the key belongs to or has meaning to",
-            "writable": true,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:aas:Identifiable;1"
+            "target": "dtmi:digitaltwins:aas:Reference;1"
         }
     ]
 }

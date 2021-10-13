@@ -1,0 +1,193 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:Key;1",
+    "@type": "Interface",
+    "displayName": "Key",
+    "description": "A key is a reference to an element by its id",
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "key",
+            "displayName": "Key",
+            "description": "Denote which kind of entity is referenced. In case type = GlobalReference then the key represents a global unique id.",
+            "writable": true,
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "description": "Enumeration of different key value types within a key",
+                "comment": "AAS type: KeyElements",
+                "enumValues": [
+                    {
+                        "name": "GlobalReference",
+                        "displayName": "Global Reference",
+                        "description": "reference to an element not belonging to an asset administration shell",
+                        "enumValue": "GlobalReference"
+                    },
+                    {
+                        "name": "FragmentReference",
+                        "displayName": "Fragment Reference",
+                        "description": "unique reference to an element within a file. The file itself is assumed to be part of an asset administration shell. ",
+                        "enumValue": "FragmentReference"
+                    },
+                    {
+                        "name": "AccessPermissionRule",
+                        "displayName": "Access Permission Rule",
+                        "description": "Access Permission Rule",
+                        "enumValue": "AccessPermissionRule"
+                    },
+                    {
+                        "name": "AnnotatedRelationshipElement",
+                        "displayName": "Annotated Relationship Element",
+                        "enumValue": "AnnotatedRelationshipElement"
+                    },
+                    {
+                        "name": "Asset",
+                        "displayName": "Asset",
+                        "enumValue": "Asset"
+                    },
+                    {
+                        "name": "AssetAdministrationShell",
+                        "displayName": "Asset Administration Shell",
+                        "enumValue": "AssetAdministrationShell"
+                    },
+                    {
+                        "name": "BasicEvent",
+                        "displayName": "Basic Event",
+                        "enumValue": "BasicEvent"
+                    },
+                    {
+                        "name": "Blob",
+                        "enumValue": "Blob"
+                    },
+                    {
+                        "name": "Capability",
+                        "enumValue": "Capability"
+                    },
+                    {
+                        "name": "ConceptDescription",
+                        "displayName": "Concept Description",
+                        "enumValue": "ConceptDescription"
+                    },
+                    {
+                        "name": "ConceptDictionary",
+                        "displayName": "Concept Dictionary",
+                        "enumValue": "ConceptDictionary"
+                    },
+                    {
+                        "name": "DataElement",
+                        "displayName": "Data Element",
+                        "enumValue": "DataElement"
+                    },
+                    {
+                        "name": "Entity",
+                        "enumValue": "Entity"
+                    },
+                    {
+                        "name": "Event",
+                        "enumValue": "Event"
+                    },
+                    {
+                        "name" : "File",
+                        "enumValue": "File"
+                    },
+                    {
+                        "name": "MultiLanguageProperty",
+                        "displayName": "Multi Language Property",
+                        "enumValue": "MultiLanguageProperty"
+                    }, 
+                    {
+                        "name": "Operation",
+                        "enumValue": "Operation"
+                    },
+                    {
+                        "name": "Property",
+                        "enumValue": "Property"
+                    },
+                    {
+                        "name": "Range",
+                        "displayName": "Range",
+                        "description": "Range with min and max",
+                        "enumValue": "Range"
+                    },
+                    {
+                        "name": "ReferenceElement",
+                        "displayName": "Reference Element",
+                        "enumValue": "ReferenceElement"
+                    }, 
+                    {
+                        "name": "RelationshipElement",
+                        "displayName": "Relationship Element",
+                        "enumValue": "RelationshipElement"
+                    },
+                    {
+                        "name": "Submodel",
+                        "enumValue": "Submodel"
+                    },
+                    {
+                        "name": "SubmodelElement",
+                        "displayName": "Submodel Element",
+                        "enumValue": "SubmodelElement"
+                    },
+                    {
+                        "name": "SubmodelElementCollection",
+                        "displayName": "Collection of Submodel Elements",
+                        "enumValue": "SubmodelElementCollection"
+                    },
+                    {
+                        "name": "View",
+                        "enumValue": "View"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "value",
+            "displayName": "Value",
+            "description": "The key value, for example an IRDI if the idType = IRDI.",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "idType",
+            "displayName": "Id type",
+            "description": "Type of the key value.",
+            "writable": true,
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "IdShort",
+                        "enumValue": "IdShort",
+                        "displayName": "Id Short",
+                        "description": "idShort of a referable element"
+                    },
+                    {
+                        "name": "FragmentId",
+                        "displayName": "Fragment Id",
+                        "enumValue": "FragmentId",
+                        "description": "Identifier of a fragment within a file"
+                    },
+                    {
+                        "name": "IRDI",
+                        "enumValue": "IRDI",
+                        "description": "IRDI according to ISO29002-5 as an Identifier scheme for properties and classifications."
+                    },
+                    {
+                        "name": "IRI",
+                        "enumValue": "IRI",
+                        "description": "IRI according to Rfc 3987. Every URI is an IRI."
+                    },
+                    {
+                        "name": "Custom",
+                        "enumValue": "Custom",
+                        "description": "Custom identifiers like GUIDs (globally unique identifiers)"
+                    }
+                ]
+            }
+        }
+    ]
+}

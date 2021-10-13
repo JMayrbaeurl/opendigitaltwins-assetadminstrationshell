@@ -14,12 +14,13 @@
       "schema": "dtmi:digitaltwins:aas:AssetKind;1"
     },
     {
-      "@type": "Property",
+      "@type": "Relationship",
       "name": "globalAssetId",
       "description": "Reference to either an Asset object or a global reference to the asset the AAS is representing.",
       "writable": true,
       "displayName": "Global Asset Id",
-      "schema": "string"
+      "maxMultiplicity": 1,
+      "target": "dtmi:digitaltwins:aas:Reference;1"
     },
     {
       "@type": "Relationship",

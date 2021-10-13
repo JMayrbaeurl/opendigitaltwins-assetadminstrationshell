@@ -28,12 +28,13 @@
             "schema": "string"
         },
         {
-            "@type": "Property",
+            "@type": "Relationship",
             "name": "valueId",
             "displayName": "Value Id",
             "description": "Reference to the global unique id of a coded value.",
             "comment": "AAS type: Reference",
-            "schema": "string"
+            "maxMultiplicity": 1,
+            "target": "dtmi:digitaltwins:aas:Reference;1"
         }
     ]
 }

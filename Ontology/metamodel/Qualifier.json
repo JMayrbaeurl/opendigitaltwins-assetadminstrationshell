@@ -1,0 +1,47 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:Qualifier;1",
+    "@type": "Interface",
+    "displayName": "Qualifier",
+    "description": "A qualifier is a type-value-pair that makes additional statements w.r.t. the value of the element.",
+    "extends": ["dtmi:digitaltwins:aas:Constraint;1", "dtmi:digitaltwins:aas:HasSemantics;1"],
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "type",
+            "displayName": "Qualifier type",
+            "description": "The qualifier type describes the type of the qualifier that is applied to the element.",
+            "comment": "AAS type: QualifierType - Mandatory",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "valueType",
+            "displayName": "Value type",
+            "description": "Data type of the qualifier value.",
+            "comment": "AAS type: DataTypeDef - Mandatory",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "value",
+            "displayName": "Value",
+            "description": "The qualifier value is the value of the qualifier",
+            "comment": "AAS type: ValueDataType",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "valueId",
+            "displayName": "Value Id",
+            "description": "Reference to the global unique id of a coded value.",
+            "comment": "AAS type: Reference",
+            "writable": true,
+            "schema": "string"
+        }
+    ]
+}

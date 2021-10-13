@@ -1,0 +1,8 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:Constraint;1",
+    "@type": "Interface",
+    "displayName": "Constraint",
+    "description": "A constraint is used to further qualify or restrict an element. Abstract interface",
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell"
+}

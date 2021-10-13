@@ -1,0 +1,30 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:RelationshipElement;1",
+    "@type": "Interface",
+    "displayName": "Relationship Element",
+    "description": "A relationship element is used to define a relationship between two referable elements",
+    "extends": [
+        "dtmi:digitaltwins:aas:SubmodelElement;1"
+    ],
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "first",
+            "description": "Reference to the first element in the relationship taking the role of the subject.",
+            "comment": "AAS type: Reference - Mandatory",
+            "maxMultiplicity": 1,
+            "writable": true,
+            "target": "dtmi:digitaltwins:aas:Referable;1"
+        },
+        {
+            "@type": "Relationship",
+            "name": "second",
+            "description": "Reference to the second element in the relationship taking the role of the subject.",
+            "comment": "AAS type: Reference - Mandatory",
+            "maxMultiplicity": 1,
+            "writable": true,
+            "target": "dtmi:digitaltwins:aas:Referable;1"
+        }
+    ]
+}

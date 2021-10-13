@@ -1,0 +1,19 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:Certificate;1",
+    "@type": "Interface",
+    "displayName": "Certificate",
+    "description": "X509 Certificate.",
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+          "@type": "Property",
+          "name": "policyAdministrationPoint",
+          "displayName": "policyAdministrationPoint",
+          "comment": "mandatory",
+          "description": "The access control administration policy point of the AAS.",
+          "schema": "dtmi:digitaltwins:aas:PolicyAdministrationPoint;1",
+          "writable": true
+        }]
+
+}

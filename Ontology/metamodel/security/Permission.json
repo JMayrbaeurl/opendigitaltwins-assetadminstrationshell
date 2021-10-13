@@ -1,0 +1,29 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:aas:Permission;1",
+  "@type": "Interface",
+  "displayName": "Permission",
+  "description": "Description of a single permission.",
+  "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "permission",
+      "displayName": "permission",
+      "comment": "mandatory",
+      "description": "Reference to a property that defines the semantics of the permission",
+      "schema": "dtmi:digitaltwins:aas:Property;1",
+      "writable": true
+    },
+
+    {
+      "@type": "Property",
+      "name": "kindOfPermission",
+      "displayName": "kindOfPermission",
+      "comment": "mandatory",
+      "description": "Description of the kind of permission. Possible kind of permission also include the denial of the permission.",
+      "schema": "dtmi:digitaltwins:aas:PermissionKind;1",
+      "writable": true
+    }
+  ]
+}

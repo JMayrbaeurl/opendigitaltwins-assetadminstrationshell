@@ -1,9 +1,32 @@
 {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:Security;1",
-    "@type": "Interface",
-    "displayName": "Security",
-    "description": "Container for security relevant information of the AAS.",
-    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell"
-  }
-  
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:aas:Security;1",
+  "@type": "Interface",
+  "displayName": "Security",
+  "description": "Container for security relevant information of the AAS.",
+  "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "accessControlPolicyPoints",
+      "displayName": "accessControlPolicyPoints",
+      "description": "Access control policy points of the AAS.",
+      "schema": "dtmi:digitaltwins:aas:AccessControlPolicyPoints;1"
+    },
+    {
+      "@type": "Component",
+      "name": "Certificate",
+      "displayName": "Certificate",
+      "description": "Access control policy points of the AAS.",
+      "schema": "dtmi:digitaltwins:aas:AccessControlPolicyPoints;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "requiredCertificateExtension",
+      "displayName": "requiredCertificateExtension",
+      "description": "Access control policy points of the AAS.",
+      "target": "dtmi:digitaltwins:aas:requiredCertificateExtension;1"
+    }
+  ]
+}

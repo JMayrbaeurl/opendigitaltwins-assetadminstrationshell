@@ -1,0 +1,28 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:PolicyAdministrationPoint;1",
+    "@type": "Interface",
+    "displayName": "PolicyAdministrationPoint",
+    "description": " Definition of a security policy administration point (PAP).",
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "localAccessControl",
+            "displayName": "localAccessControl",
+            "description": "The policy administration point of access control as realized by the AAS itself.",
+            "schema": "dtmi:digitaltwins:aas:AccessControl;1",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "externalAccessControl",
+            "displayName": "externalAccessControl",
+            "description": "Tf externalAccessControl True then an Endpoint to an external access control defining a policy administration point to be used by the AAS needs to be configured.",
+            "schema": "boolean",
+            "writable": true
+        
+        }
+    ]
+
+}

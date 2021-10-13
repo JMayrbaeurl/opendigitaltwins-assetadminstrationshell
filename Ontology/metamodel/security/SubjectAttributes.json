@@ -1,0 +1,19 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:aas:SubjectAttributes;1",
+  "@type": "Interface",
+  "displayName": "SubjectAttributes",
+  "description": "A set of data elements that further classifies a specific subject",
+  "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "subjectAttribute",
+      "displayName": "subjectAttribute",
+      "comment": "mandatory",
+      "description": "A data element that further classifies a specific subject.",
+      "schema": "dtmi:digitaltwins:aas:DataElement;1",
+      "writable": true
+    }
+  ]
+}

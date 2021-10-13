@@ -21,9 +21,9 @@
             "name": "externalRef",
             "displayName": "External references",
             "description": "Use for references to external global elements",
-            "comment": "One reference per line",
+            "comment": "Multiple refs in one line separated by ';'",
             "writable": true,
-            "schema": "multiLineString"
+            "schema": "string"
         }
     ]
 }

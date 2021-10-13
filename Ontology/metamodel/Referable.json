@@ -19,7 +19,7 @@
             "name": "displayName",
             "displayName": "Display name",
             "description": "Display name. Can be provided in several languages.",
-            "schema": "multiLineString",
+            "schema": "string",
             "writable": true
         },
         {
@@ -36,7 +36,7 @@
             "displayName": "Description",
             "description": "Description or comments on the element. The description can be provided in several languages.",
             "writable": true,
-            "schema": "multiLineString"
+            "schema": "string"
         }
     ]
 }

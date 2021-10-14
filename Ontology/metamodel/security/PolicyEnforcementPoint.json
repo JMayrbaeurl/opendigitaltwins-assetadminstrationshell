@@ -1,0 +1,19 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:aas:PolicyEnforcementPoint;1",
+  "@type": "Interface",
+  "displayName": "PolicyEnforcementPoint",
+  "description": "Defines the security policy enforcement points (PEP).",
+  "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "externalPolicyEnforcementPoint",
+      "displayName": "externalPolicyEnforcementPoint",
+      "description": "If externalPolicyEnforcementPoint True then an Endpoint to external available enforcement point taking needs to be configured for the AAS",
+      "comment": "mandatory",
+      "schema": "boolean",
+      "writable": true
+    }
+  ]
+}

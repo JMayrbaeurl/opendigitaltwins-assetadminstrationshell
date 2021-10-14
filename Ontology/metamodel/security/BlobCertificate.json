@@ -1,0 +1,35 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:aas:BlobCertificate;1",
+  "@type": "Interface",
+  "displayName": "BlobCertificate",
+  "description": "Certificate provided as BLOB.",
+  "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+  "extends": "dtmi:digitaltwins:aas:Certificate;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "blobCertificate",
+      "displayName": "blobCertificate",
+      "description": "Certificate as BLOB.",
+      "schema": "dtmi:digitaltwins:aas:Blob;1",
+      "writable": true
+    },
+    {
+        "@type": "Relationship",
+        "name": "containedExtension",
+        "displayName": "containedExtension",
+        "description": "Extensions contained in the certificate.",
+        "target": "dtmi:digitaltwins:aas:Certificate;1",
+        "minMultiplicity": 0
+      },
+      {
+        "@type": "Property",
+        "name": "lastCertificate",
+        "displayName": "lastCertificate",
+        "description": "Denotes whether this certificate is the certificated that fast added last.",
+        "schema": "boolean",
+        "writable": true
+      }
+  ]
+}

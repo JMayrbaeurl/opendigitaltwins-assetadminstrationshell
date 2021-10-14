@@ -1,0 +1,34 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:aas:PermissionsPerObject;1",
+  "@type": "Interface",
+  "displayName": "PermissionsPerObject",
+  "description": "Table that defines access permissions for a specified object. The object is any referable element in the AAS. Additionally, object attributes can be defined that further specify the kind of object the permissions apply to",
+  "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "object",
+      "displayName": "object",
+      "description": "Element to which permission shall be assigned.",
+      "schema": "dtmi:digitaltwins:aas:Referable;1",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "targetObjectAttributes",
+      "displayName": "targetObjectAttributes",
+      "description": "Target object attributes that need to be fulfilled so that the access permissions apply to the accessing subject.",
+      "schema": "dtmi:digitaltwins:aas:ObjectAttributes;1",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "permission",
+      "displayName": "permission",
+      "description": "Permissions assigned to the object. ",
+      "schema": "dtmi:digitaltwins:aas:Permission;1",
+      "writable": true
+    }
+  ]
+}

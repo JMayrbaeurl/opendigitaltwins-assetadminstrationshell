@@ -1,0 +1,41 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:aas:AccessControlPolicyPoints;1",
+  "@type": "Interface",
+  "displayName": "AccessControlPolicyPoints",
+  "description": "Container for access control policy points.",
+  "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "policyAdministrationPoint",
+      "displayName": "policyAdministrationPoint",
+      "comment": "mandatory",
+      "description": "The access control administration policy point of the AAS.",
+      "schema": "dtmi:digitaltwins:aas:policyAdministrationPoint;1"
+    },
+    {
+      "@type": "Component",
+      "name": "policyDecisionPoint",
+      "displayName": "policyDecisionPoint",
+      "comment": "mandatory",
+      "description": "The access control policy decision point of the AAS.",
+      "schema": "dtmi:digitaltwins:aas:policyDecisionPoint;1"
+    },
+    {
+      "@type": "Component",
+      "name": "policyEnforcementPoint",
+      "displayName": "policyEnforcementPoint",
+      "comment": "mandatory",
+      "description": "The access control policy enforcement point of the AAS.",
+      "schema": "dtmi:digitaltwins:aas:policyEnforcementPoint;1"
+    },
+    {
+      "@type": "Component",
+      "name": "policyInformationPoints",
+      "displayName": "policyInformationPoints",
+      "description": "The access control policy information points of the AAS.",
+      "schema": "dtmi:digitaltwins:aas:policyInformationPoints;1"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ The authors of this GitHub repository have trialed the applicability of using th
 
 The Asset Administration Shell is defined as a meta model. Implementing all essential models in DTDL was straightforward given the capabilities of DTDL.  
 
-![High level architecture!](Assets\images\Figure_1_Implemented_AAS_Metamodel_and_Submodels.png)
+![High level architecture!](Assets/images/Figure_1_Implemented_AAS_Metamodel_and_Submodels.png)
 
 Figure 1: Implemented AAS Metamodel and Submodels 
 

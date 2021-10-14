@@ -1,0 +1,11 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:Capability;1",
+    "@type": "Interface",
+    "displayName": "Capability",
+    "description": "A capability is the implementation-independent description of the potential of an asset to achieve a certain effect in the physical or virtual world. ",
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "extends": [
+        "dtmi:digitaltwins:aas:SubmodelElement;1"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:ValueList;1",
+    "@type": "Interface",
+    "displayName": "Value List",
+    "description": "A set of value reference pairs.",
+    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "valueReferencePairType",
+            "displayName": "Value Reference Pair Type",
+            "description": "A pair of a value together with its global unique id",
+            "writable": true,
+            "target": "dtmi:digitaltwins:aas:ValueReferencePair;1"
+        }
+    ]
+  }

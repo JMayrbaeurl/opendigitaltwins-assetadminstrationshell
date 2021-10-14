@@ -1,29 +1,32 @@
 {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:AccessControl;1",
-    "@type": "Interface",
-    "displayName": "AccessControl",
-    "description": "Access Control defines the local access control policy administration point.",
-    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
-    "extends":["dtmi:digitaltwins:aas:Referable;1","dtmi:digitaltwins:aas:Qualifiable;1"],
-    "contents": [
-        {
-          "@type": "Property",
-          "name": "targetSubjectAttributes",
-          "displayName": "targetSubjectAttributes",
-          "description": "Target subject attributes that need to be fulfilled by the accessing subject to get the permissions defined by this rule.",
-          "schema": "dtmi:digitaltwins:aas:SubjectAttributes;1",
-          "comment": "mandatory",
-          "writable": true
-        },
-        {
-            "@type": "Property",
-            "name": "permissionsPerObject",
-            "displayName": "permissionsPerObject",
-            "description": "Target subject attributes that need to be fulfilled by the accessing subject to get the permissions defined by this rule.",
-            "schema": "dtmi:digitaltwins:aas:PermissionsPerObject;1",
-            "writable": true
-          }
-    ]
-
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:aas:AccessPermissionRule;1",
+  "@type": "Interface",
+  "displayName": "Access Permission Rule",
+  "description": "Table that defines access permissions per authenticated subject for a set of objects (referable elements).",
+  "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+  "extends": [
+    "dtmi:digitaltwins:aas:Referable;1",
+    "dtmi:digitaltwins:aas:Qualifiable;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "targetSubjectAttributes",
+      "displayName": "Target Subject Attributes",
+      "description": "Target subject attributes that need to be fulfilled by the accessing subject to get the permissions defined by this rule.",
+      "target": "dtmi:digitaltwins:aas:SubjectAttributes;1",
+      "maxMultiplicity": 1,
+      "comment": "mandatory",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "name": "permissionsPerObject",
+      "displayName": "Permissions Per Object",
+      "description": "Target subject attributes that need to be fulfilled by the accessing subject to get the permissions defined by this rule.",
+      "target": "dtmi:digitaltwins:aas:PermissionsPerObject;1",
+      "writable": true
+    }
+  ]
 }

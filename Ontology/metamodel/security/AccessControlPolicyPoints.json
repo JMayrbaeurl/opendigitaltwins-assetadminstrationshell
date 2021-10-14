@@ -12,7 +12,7 @@
       "displayName": "policyAdministrationPoint",
       "comment": "mandatory",
       "description": "The access control administration policy point of the AAS.",
-      "schema": "dtmi:digitaltwins:aas:policyAdministrationPoint;1"
+      "schema": "dtmi:digitaltwins:aas:PolicyAdministrationPoint;1"
     },
     {
       "@type": "Component",
@@ -20,7 +20,7 @@
       "displayName": "policyDecisionPoint",
       "comment": "mandatory",
       "description": "The access control policy decision point of the AAS.",
-      "schema": "dtmi:digitaltwins:aas:policyDecisionPoint;1"
+      "schema": "dtmi:digitaltwins:aas:PolicyDecisionPoint;1"
     },
     {
       "@type": "Component",
@@ -28,14 +28,14 @@
       "displayName": "policyEnforcementPoint",
       "comment": "mandatory",
       "description": "The access control policy enforcement point of the AAS.",
-      "schema": "dtmi:digitaltwins:aas:policyEnforcementPoint;1"
+      "schema": "dtmi:digitaltwins:aas:PolicyEnforcementPoint;1"
     },
     {
       "@type": "Component",
       "name": "policyInformationPoints",
       "displayName": "policyInformationPoints",
       "description": "The access control policy information points of the AAS.",
-      "schema": "dtmi:digitaltwins:aas:policyInformationPoints;1"
+      "schema": "dtmi:digitaltwins:aas:PolicyInformationPoints;1"
     }
   ]
 }

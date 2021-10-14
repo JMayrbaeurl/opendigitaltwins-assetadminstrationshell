@@ -7,23 +7,52 @@
   "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
   "contents": [
     {
-      "@type": "Property",
+      "@type": "Relationship",
       "name": "permission",
-      "displayName": "permission",
+      "displayName": "Permission",
       "comment": "mandatory",
       "description": "Reference to a property that defines the semantics of the permission",
-      "schema": "dtmi:digitaltwins:aas:Property;1",
+      "target": "dtmi:digitaltwins:aas:Property;1",
+      "maxMultiplicity": 1,
       "writable": true
     },
-
     {
       "@type": "Property",
       "name": "kindOfPermission",
-      "displayName": "kindOfPermission",
+      "displayName": "kind of permission",
       "comment": "mandatory",
       "description": "Description of the kind of permission. Possible kind of permission also include the denial of the permission.",
-      "schema": "dtmi:digitaltwins:aas:PermissionKind;1",
-      "writable": true
+      "writable": true,
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Allow",
+            "displayName": "Allow",
+            "description": "Allow the permission given to the subject.",
+            "enumValue": "Allow"
+          },
+          {
+            "name": "Deny",
+            "displayName": "Deny",
+            "description": "Explicitly deny the permission given to the subject.",
+            "enumValue": "Deny"
+          },
+          {
+            "name": "NotApplicable",
+            "displayName": "Not applicable",
+            "description": "The permission is not applicable to the subject.",
+            "enumValue": "NotApplicable"
+          },
+          {
+            "name": "Undefined",
+            "displayName": "Deny",
+            "description": "Explicitly deny the permission given to the subject.",
+            "enumValue": "Undefined"
+          }
+        ]
+      }
     }
   ]
 }

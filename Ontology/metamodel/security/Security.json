@@ -5,28 +5,31 @@
   "displayName": "Security",
   "description": "Container for security relevant information of the AAS.",
   "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
-
   "contents": [
     {
-      "@type": "Component",
+      "@type": "Relationship",
       "name": "accessControlPolicyPoints",
-      "displayName": "accessControlPolicyPoints",
+      "displayName": "Access Control Policy Points",
       "description": "Access control policy points of the AAS.",
-      "schema": "dtmi:digitaltwins:aas:AccessControlPolicyPoints;1"
+      "target": "dtmi:digitaltwins:aas:AccessControlPolicyPoints;1",
+      "maxMultiplicity": 1,
+      "writable": true
     },
     {
-      "@type": "Component",
-      "name": "Certificate",
+      "@type": "Relationship",
+      "name": "certificate",
       "displayName": "Certificate",
-      "description": "Access control policy points of the AAS.",
-      "schema": "dtmi:digitaltwins:aas:AccessControlPolicyPoints;1"
+      "description": "Authentificating Certificates of the AAS and its submodels etc.",
+      "target": "dtmi:digitaltwins:aas:Certificate;1",
+      "writable": true
     },
     {
       "@type": "Relationship",
       "name": "requiredCertificateExtension",
-      "displayName": "requiredCertificateExtension",
-      "description": "Access control policy points of the AAS.",
-      "target": "dtmi:digitaltwins:aas:requiredCertificateExtension;1"
+      "displayName": "Required Certificate Extension",
+      "description": "Certificate extensions as required by the AAS",
+      "target": "dtmi:digitaltwins:aas:Reference;1",
+      "writable": true
     }
   ]
 }

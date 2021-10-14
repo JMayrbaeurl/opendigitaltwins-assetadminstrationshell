@@ -1,17 +1,17 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:digitaltwins:aas:AccessControl;1",
+  "@id": "dtmi:digitaltwins:aas:ObjectAttributes;1",
   "@type": "Interface",
-  "displayName": "AccessControl",
-  "description": "Access Control defines the local access control policy administration point.",
+  "displayName": "Object Attributes",
+  "description": "A set of data elements that describe object attributes. These attributes need to refer to a data element within an existing submodel",
   "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
   "contents": [
     {
-      "@type": "Property",
-      "name": "accessPermissionRule",
-      "displayName": "accessPermissionRule",
-      "description": "Access permission rules of the AAS describing the rights assigned to",
-      "schema": "dtmi:digitaltwins:aas:AccessPermissionRule;1",
+      "@type": "Relationship",
+      "name": "objectAttribute",
+      "displayName": "Object Attribute",
+      "description": "Reference to a data element that further classifies an object.",
+      "target": "dtmi:digitaltwins:aas:DataElement;1",
       "writable": true
     }
   ]

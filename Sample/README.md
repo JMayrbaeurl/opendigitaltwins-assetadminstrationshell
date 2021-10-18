@@ -1,2 +1,3 @@
 # opendigitaltwins-assetadminstrationshell sample graph
-# two device instances in AAS
+The JSON generates two sample AAS device graphs.
+Please note: Not yet according to AAS specification  

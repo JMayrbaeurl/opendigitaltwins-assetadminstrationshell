@@ -4,7 +4,7 @@
   "@type": "Interface",
   "displayName": "Submodel",
   "extends": [
-    "dtmi:digitaltwins:aas:Referable;1",
+    "dtmi:digitaltwins:aas:Identifiable;1",
     "dtmi:digitaltwins:aas:Qualifiable;1"
   ],
   "comment": "Attention: Due to DTDL v2 limitations of max 2 extends for an interface, the remaining 3 superinterfaces from the AAS specification were inlined",

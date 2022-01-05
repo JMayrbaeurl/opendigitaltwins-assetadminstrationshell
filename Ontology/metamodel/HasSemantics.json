@@ -7,12 +7,14 @@
     "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
     "contents": [
         {
-            "@type": "Property",
-            "name" : "semanticId",
+            "@type": "Relationship",
+            "name": "semanticId",
             "displayName": "Semantic Id",
             "description": "Identifier of the semantic definition of the element. It is called semantic id of the element.",
+            "target": "dtmi:digitaltwins:aas:Reference;1",
             "writable": true,
-            "schema": "string"
+            "maxMultiplicity": 1,
+            "comment": "Kind: aggregation, Cardinality: 0..1"
         }
     ]
 }

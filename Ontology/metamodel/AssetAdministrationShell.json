@@ -44,6 +44,12 @@
       "description": "Reference to a submodel of the AAS. A submodel is a description of an aspect of the asset the AAS is representing. The asset of an AAS is typically described by one or more submodels. Temporarily no submodel might be assigned to the AAS.",
       "writable": true,
       "target": "dtmi:digitaltwins:aas:Submodel;1"
+    },
+    {
+      "@type": "Component",
+      "name": "tags",
+      "schema": "dtmi:digitaltwins:aas:ext:Tags;1",
+      "comment": "Not part of the AAS meta model. Makes querying easier. See https://docs.microsoft.com/en-us/azure/digital-twins/how-to-use-tags"
     }
   ]
 }

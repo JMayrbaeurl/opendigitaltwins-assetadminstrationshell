@@ -35,12 +35,6 @@
             "comment": "AAS type: Reference",
             "maxMultiplicity": 1,
             "target": "dtmi:digitaltwins:aas:Reference;1"
-        },
-        {
-            "@type": "Component",
-            "name": "tags",
-            "schema": "dtmi:digitaltwins:aas:ext:Tags;1",
-            "comment": "Not part of the AAS meta model. Makes querying easier. See https://docs.microsoft.com/en-us/azure/digital-twins/how-to-use-tags"
         }
     ]
 }

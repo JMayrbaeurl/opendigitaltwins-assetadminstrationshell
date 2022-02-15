@@ -15,12 +15,11 @@
             "schema": "string"
         },
         {
-            "@type": "Property",
+            "@type": "Component",
             "name": "displayName",
             "displayName": "Display name",
             "description": "Display name. Can be provided in several languages.",
-            "schema": "string",
-            "writable": true
+            "schema": "dtmi:digitaltwins:aas:LangStringSet;1"
         },
         {
             "@type": "Property",
@@ -31,12 +30,17 @@
             "schema": "string"
         },
         {
-            "@type": "Property",
+            "@type": "Component",
             "name": "description",
             "displayName": "Description",
             "description": "Description or comments on the element. The description can be provided in several languages.",
-            "writable": true,
-            "schema": "string"
+            "schema": "dtmi:digitaltwins:aas:LangStringSet;1"
+        },
+        {
+            "@type": "Component",
+            "name": "tags",
+            "schema": "dtmi:digitaltwins:aas:ext:Tags;1",
+            "comment": "Not part of the AAS meta model. Makes querying easier. See https://docs.microsoft.com/en-us/azure/digital-twins/how-to-use-tags"
         }
     ]
 }

@@ -10,20 +10,18 @@
     ],
     "contents": [
         {
-            "@type": "Property",
+            "@type": "Component",
             "name": "preferredName",
             "displayName": "Preferred Name",
-            "writable": true,
             "comment": "AAS type: LangStringSet",
-            "schema": "string"
+            "schema": "dtmi:digitaltwins:aas:LangStringSet;1"
         },
         {
-            "@type": "Property",
+            "@type": "Component",
             "name": "shortName",
             "displayName": "Short name",
-            "writable": true,
             "comment": "AAS type: LangStringSet",
-            "schema": "string"
+            "schema": "dtmi:digitaltwins:aas:LangStringSet;1"
         },
         {
             "@type": "Property",
@@ -139,13 +137,12 @@
             }
         },
         {
-            "@type": "Property",
+            "@type": "Component",
             "name": "definition",
             "displayName": "Definition",
             "description": "Definition in different languages",
             "comment": "AAS type: LangStringSet",
-            "writable": true,
-            "schema": "string"
+            "schema": "dtmi:digitaltwins:aas:LangStringSet;1"
         },
         {
             "@type": "Property",

@@ -9,13 +9,12 @@
   "comment": "A property is a data element that has a multi-language value",
   "contents": [
     {
-      "@type": "Property",
+      "@type": "Component",
       "name": "value",
       "displayName": "Value",
       "description": "The value of the property instance.",
       "comment": "AAS type: LangStringSet",
-      "writable": true,
-      "schema": "string"
+      "schema": "dtmi:digitaltwins:aas:LangStringSet;1"
     },
     {
       "@type": "Relationship",

@@ -5,13 +5,5 @@
     "displayName": "Asset",
     "description": "An Asset describes meta data of an asset that is represented by an AAS and is identical for all AAS representing this asset.The asset has a globally unique identifier",
     "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
-    "extends": ["dtmi:digitaltwins:aas:Identifiable;1", "dtmi:digitaltwins:aas:HasDataSpecification;1"],
-    "contents": [
-      {
-        "@type": "Component",
-        "name": "tags",
-        "schema": "dtmi:digitaltwins:aas:ext:Tags;1",
-        "comment": "Not part of the AAS meta model. Makes querying easier. See https://docs.microsoft.com/en-us/azure/digital-twins/how-to-use-tags"
-      }
-    ]
+    "extends": ["dtmi:digitaltwins:aas:Identifiable;1", "dtmi:digitaltwins:aas:HasDataSpecification;1"]
   }

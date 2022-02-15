@@ -39,12 +39,6 @@
       "writable": true,
       "target": "dtmi:digitaltwins:aas:DataSpecificationContent;1",
       "comment": "Attention: Inlined from interface HasDataSpecification to reduce number of extended interfaces"
-    },
-    {
-      "@type": "Component",
-      "name": "tags",
-      "schema": "dtmi:digitaltwins:aas:ext:Tags;1",
-      "comment": "Not part of the AAS meta model. Makes querying easier. See https://docs.microsoft.com/en-us/azure/digital-twins/how-to-use-tags"
     }
   ]
 }

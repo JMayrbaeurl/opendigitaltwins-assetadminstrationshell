@@ -22,7 +22,7 @@ Figure 2: Asset Administration Shell meta model graph
 
 # Extensibility through Submodels
 
-A powerful key concept of the AAS metamodel is that all relevant information is provided by submodels. Submodels can contain other submodels.  
+A powerful key concept of the AAS metamodel is that all relevant information is provided by submodels. Submodels can refer to other submodels.  
 
 **Pro:**  
 

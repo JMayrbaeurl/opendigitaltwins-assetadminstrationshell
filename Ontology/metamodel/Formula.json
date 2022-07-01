@@ -4,17 +4,5 @@
     "@type": "Interface",
     "displayName": "Formula",
     "description": "A formula is used to describe constraints by a logical expression.",
-    "extends": ["dtmi:digitaltwins:aas:Constraint;1"],
-    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
-    "contents": [
-        {
-            "@type": "Relationship",
-            "name": "dependsOn",
-            "displayName": "depends on",
-            "writable": true,
-            "description": "A formula may depend on referable or even external global elements that are used in the logical expression. The value of the referenced elements needs to be accessible so that it can be evaluated in the formula to true or false in the",
-            "target": "dtmi:digitaltwins:aas:Reference;1",
-            "comment": "To refer to an external global element use the property 'externalRef'"
-        }
-    ]
+    "comment": "Abstract. According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02"
 }

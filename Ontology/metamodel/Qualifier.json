@@ -4,8 +4,8 @@
     "@type": "Interface",
     "displayName": "Qualifier",
     "description": "A qualifier is a type-value-pair that makes additional statements w.r.t. the value of the element.",
-    "extends": ["dtmi:digitaltwins:aas:Constraint;1", "dtmi:digitaltwins:aas:HasSemantics;1"],
-    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "extends": ["dtmi:digitaltwins:aas:HasSemantics;1"],
+    "comment": "According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02",
     "contents": [
         {
             "@type": "Property",
@@ -21,7 +21,7 @@
             "name": "valueType",
             "displayName": "Value type",
             "description": "Data type of the qualifier value.",
-            "comment": "AAS type: DataTypeDef - Mandatory",
+            "comment": "AAS type: DataTypeDefXsd - Mandatory",
             "writable": true,
             "schema": "string"
         },

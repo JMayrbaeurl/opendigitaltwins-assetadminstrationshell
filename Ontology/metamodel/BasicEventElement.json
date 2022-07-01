@@ -1,12 +1,12 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:BasicEvent;1",
+    "@id": "dtmi:digitaltwins:aas:BasicEventElement;1",
     "@type": "Interface",
     "displayName": "Basic Event",
     "description": "A basic event.",
-    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "comment": "According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02",
     "extends": [
-        "dtmi:digitaltwins:aas:Event;1"
+        "dtmi:digitaltwins:aas:EventElement;1"
     ],
     "contents": [
         {

@@ -5,7 +5,7 @@
     "displayName": "Extension",
     "description": "Single extension of an element",
     "extends": ["dtmi:digitaltwins:aas:HasSemantics;1"],
-    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "comment": "According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02",
     "contents": [
         {
             "@type": "Property",
@@ -33,8 +33,8 @@
             "name": "refersTo",
             "description": "Reference to an element the extension refers to.",
             "displayName": "Refers to",
-            "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:aas:Reference;1",
+            "comment": "Type ModelReference<Referable> according to specification",
+            "target": "dtmi:digitaltwins:aas:Referable;1",
             "writable": true
         }
     ]

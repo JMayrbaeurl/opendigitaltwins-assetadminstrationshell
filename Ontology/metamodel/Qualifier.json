@@ -9,6 +9,34 @@
     "contents": [
         {
             "@type": "Property",
+            "name": "kind",
+            "displayName": "Kind",
+            "description": "The qualifier kind describes the kind of the qualifier that is applied to the element. Default: ConceptQualifier",
+            "writable": true,
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "ValueQualifier",
+                        "enumValue": "ValueQualifier",
+                        "description": "qualifies the value of the element and can change during run-time Value qualifiers are only applicable to elements with kind=„Instance”"
+                    },
+                    {
+                        "name": "ConceptQualifier",
+                        "enumValue": "ConceptQualifier",
+                        "description": "qualifies the semantic definition the element is referring to (HasSemantics/semanticId)"
+                    },
+                    {
+                        "name": "TemplateQualifier",
+                        "enumValue": "TemplateQualifier",
+                        "description": "qualifies the elements within a specific submodel on concept level. Template qualifiers are only applicable to elements with kind=„Template”"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
             "name": "type",
             "displayName": "Qualifier type",
             "description": "The qualifier type describes the type of the qualifier that is applied to the element.",

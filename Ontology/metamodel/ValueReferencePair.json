@@ -4,14 +4,13 @@
     "@type": "Interface",
     "displayName": "Value Reference Pair",
     "description": "A value reference pair within a value list. Each value has a global unique id defining its semantic",
-    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "comment": "According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02",
     "contents": [
         {
             "@type": "Property",
             "name": "value",
             "displayName": "Value",
             "description": "the value of the referenced concept definition of the value in valueId.",
-            "comment": "AAS type: ValueDataType",
             "writable": true,
             "schema": "string"
         },

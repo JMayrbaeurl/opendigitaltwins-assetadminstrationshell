@@ -29,12 +29,12 @@
             }
         },
         {
-            "@type": "Property",
+            "@type": "Relationship",
             "name": "referredSemanticId",
             "displayName": "Referred semantic Id",
             "description": "SemanticId of the referenced model element (Reference/type=ModelReference). For global references there typically is no semantic ID. It is recommended to use a global reference",
-            "comment": "Specification defines Reference as type here. But this creates a circular reference in the definition",
-            "schema": "string",
+            "target": "dtmi:digitaltwins:aas:Reference;1",
+            "maxMultiplicity": 1,
             "writable": true
         },
         {

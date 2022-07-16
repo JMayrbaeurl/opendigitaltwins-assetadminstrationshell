@@ -4,11 +4,7 @@
   "@type": "Interface",
   "displayName": "Access Permission Rule",
   "description": "Table that defines access permissions per authenticated subject for a set of objects (referable elements).",
-  "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
-  "extends": [
-    "dtmi:digitaltwins:aas:Referable;1",
-    "dtmi:digitaltwins:aas:Qualifiable;1"
-  ],
+  "comment": "According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02",
   "contents": [
     {
       "@type": "Relationship",
@@ -27,6 +23,15 @@
       "description": "Target subject attributes that need to be fulfilled by the accessing subject to get the permissions defined by this rule.",
       "target": "dtmi:digitaltwins:aas:PermissionsPerObject;1",
       "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "name": "constraint",
+      "displayName": "Constraint",
+      "description": "Constraint that needs to be validated to true so that access permission rule holds.",
+      "target": "dtmi:digitaltwins:aas:Formula;1",
+      "writable": true,
+      "maxMultiplicity": 1
     }
   ]
 }

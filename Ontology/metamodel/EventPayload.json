@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:EventPayload;1",
+    "@id": "dtmi:digitaltwins:aas:EventPayload;30",
     "@type": "Interface",
     "displayName": "Event payload",
     "description": "Defines the necessary information of an event instance sent out or received",
@@ -10,7 +10,7 @@
             "@type": "Relationship",
             "name": "source",
             "description": "Reference to the source event element, including identification of AAS, Submodel, SubmodelElements.",
-            "target": "dtmi:digitaltwins:aas:Referable;1",
+            "target": "dtmi:digitaltwins:aas:Referable;30",
             "maxMultiplicity": 1,
             "writable": true
         },
@@ -19,7 +19,7 @@
             "name": "sourceSemanticId",
             "displayName": "Source semantic Id",
             "description": "semanticId of the source event element, if available",
-            "target": "dtmi:digitaltwins:aas:Reference;1",
+            "target": "dtmi:digitaltwins:aas:Reference;30",
             "maxMultiplicity": 1,
             "writable": true
         },
@@ -28,7 +28,7 @@
             "name": "observableReference",
             "displayName": "Observable reference",
             "description": "Reference to the referable, which defines the scope of the event. Can be AssetAdministrationShell, Submodel or SubmodelElement.",
-            "target": "dtmi:digitaltwins:aas:Referable;1",
+            "target": "dtmi:digitaltwins:aas:Referable;30",
             "maxMultiplicity": 1,
             "writable": true
         },
@@ -37,7 +37,7 @@
             "name": "observableSemanticId",
             "displayName": "Observable semantic Id",
             "description": "semanticId of the referable which defines the scope of the event, if available. It is recommended to use a global reference",
-            "target": "dtmi:digitaltwins:aas:Reference;1",
+            "target": "dtmi:digitaltwins:aas:Reference;30",
             "maxMultiplicity": 1,
             "writable": true
         },
@@ -54,7 +54,7 @@
             "name": "subjectId",
             "displayName": "Subject Id",
             "description": "Subject, who/which initiated the creation.",
-            "target": "dtmi:digitaltwins:aas:Reference;1",
+            "target": "dtmi:digitaltwins:aas:Reference;30",
             "maxMultiplicity": 1,
             "writable": true
         },

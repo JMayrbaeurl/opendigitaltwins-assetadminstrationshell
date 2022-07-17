@@ -1,12 +1,12 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:DataSpecificationIEC61360;1",
+    "@id": "dtmi:digitaltwins:aas:DataSpecificationIEC61360;30",
     "@type": "Interface",
     "displayName": "DataSpecificationIEC61360",
     "description": "Content of data specification template for concept descriptions conformant to IEC 61360. Although the IEC61360 attributes listed in this template are defined for properties and values and value lists only it is also possible to use the template for other definition",
     "comment": "According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02",
     "extends": [
-        "dtmi:digitaltwins:aas:DataSpecificationContent;1"
+        "dtmi:digitaltwins:aas:DataSpecificationContent;30"
     ],
     "contents": [
         {
@@ -14,14 +14,14 @@
             "name": "preferredName",
             "displayName": "Preferred Name",
             "comment": "AAS type: LangStringSet",
-            "schema": "dtmi:digitaltwins:aas:LangStringSet;1"
+            "schema": "dtmi:digitaltwins:aas:LangStringSet;30"
         },
         {
             "@type": "Component",
             "name": "shortName",
             "displayName": "Short name",
             "comment": "AAS type: LangStringSet",
-            "schema": "dtmi:digitaltwins:aas:LangStringSet;1"
+            "schema": "dtmi:digitaltwins:aas:LangStringSet;30"
         },
         {
             "@type": "Property",
@@ -37,7 +37,7 @@
             "description": "Unique unit id",
             "writable": true,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:aas:Reference;1"
+            "target": "dtmi:digitaltwins:aas:Reference;30"
         },
         {
             "@type": "Property",
@@ -158,7 +158,7 @@
             "displayName": "Definition",
             "description": "Definition in different languages",
             "comment": "AAS type: LangStringSet",
-            "schema": "dtmi:digitaltwins:aas:LangStringSet;1"
+            "schema": "dtmi:digitaltwins:aas:LangStringSet;30"
         },
         {
             "@type": "Property",
@@ -174,7 +174,7 @@
             "description": "List of allowed values",
             "maxMultiplicity": 1,
             "writable": true,
-            "target": "dtmi:digitaltwins:aas:ValueList;1"
+            "target": "dtmi:digitaltwins:aas:ValueList;30"
         },
         {
             "@type": "Property",

@@ -1,10 +1,10 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:HasKind;1",
+    "@id": "dtmi:digitaltwins:aas:HasKind;30",
     "@type": "Interface",
     "displayName": "Has Kind",
     "description": "An element with a kind is an element that can either represent a template or an instance.",
-    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "comment": "According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02",
     "contents": [
         {
             "@type": "Property",

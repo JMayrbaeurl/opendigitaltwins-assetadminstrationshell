@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:digitaltwins:aas:Resource;1",
+  "@id": "dtmi:digitaltwins:aas:Resource;30",
   "@type": "Interface",
   "displayName": "Resource",
   "description": "Resource represents an address to a file (a locator). The value is an URI that can represent an absolute or relative path.",

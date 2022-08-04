@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:AdministrationInformation;30",
+    "@id": "dtmi:digitaltwins:aas:AdministrationInformation;1",
     "@type": "Interface",
     "displayName": "Administration Information",
     "description": "Administrative metainformation for an element like version information.",

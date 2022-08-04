@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:HasKind;30",
+    "@id": "dtmi:digitaltwins:aas:HasKind;1",
     "@type": "Interface",
     "displayName": "Has Kind",
     "description": "An element with a kind is an element that can either represent a template or an instance.",

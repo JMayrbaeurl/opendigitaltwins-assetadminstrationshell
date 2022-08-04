@@ -1,10 +1,10 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:Referable;30",
+    "@id": "dtmi:digitaltwins:aas:Referable;1",
     "@type": "Interface",
     "displayName": "Referable",
     "description": "An element that is referable by its idShort. This id is not globally unique. This id is unique within the name space of the element.",
-    "extends": ["dtmi:digitaltwins:aas:HasExtensions;30"],
+    "extends": ["dtmi:digitaltwins:aas:HasExtensions;1"],
     "comment": "According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02",
     "contents": [
         {
@@ -19,7 +19,7 @@
             "name": "displayName",
             "displayName": "Display name",
             "description": "Display name. Can be provided in several languages.",
-            "schema": "dtmi:digitaltwins:aas:LangStringSet;30"
+            "schema": "dtmi:digitaltwins:aas:LangStringSet;1"
         },
         {
             "@type": "Property",
@@ -34,7 +34,7 @@
             "name": "description",
             "displayName": "Description",
             "description": "Description or comments on the element. The description can be provided in several languages.",
-            "schema": "dtmi:digitaltwins:aas:LangStringSet;30"
+            "schema": "dtmi:digitaltwins:aas:LangStringSet;1"
         },
         {
             "@type": "Property",

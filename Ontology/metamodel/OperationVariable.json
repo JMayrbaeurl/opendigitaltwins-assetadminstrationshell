@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:OperationVariable;30",
+    "@id": "dtmi:digitaltwins:aas:OperationVariable;1",
     "@type": "Interface",
     "displayName": "Operation variable",
     "description": "An operation variable is a submodel element that is used as input or output variable of an operation",
@@ -13,7 +13,7 @@
             "description": "Describes the needed argument for an operation via a submodel element of kind=Template.",
             "writable": true,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:aas:SubmodelElement;30"
+            "target": "dtmi:digitaltwins:aas:SubmodelElement;1"
         }
     ]
 }

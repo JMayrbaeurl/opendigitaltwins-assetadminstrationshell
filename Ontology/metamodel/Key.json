@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:Key;30",
+    "@id": "dtmi:digitaltwins:aas:Key;1",
     "@type": "Interface",
     "displayName": "Key",
     "description": "A key is a reference to an element by its id",

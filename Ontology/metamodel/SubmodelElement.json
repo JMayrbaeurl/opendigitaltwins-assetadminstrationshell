@@ -1,18 +1,18 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:digitaltwins:aas:SubmodelElement;30",
+  "@id": "dtmi:digitaltwins:aas:SubmodelElement;1",
   "@type": "Interface",
   "displayName": "SubmodelElement",
   "extends": [
-    "dtmi:digitaltwins:aas:Referable;30",
-    "dtmi:digitaltwins:aas:Qualifiable;30"
+    "dtmi:digitaltwins:aas:Referable;1",
+    "dtmi:digitaltwins:aas:Qualifiable;1"
   ],
   "comment": "Attention: Due to DTDL v2 limitations of max 2 extends for an interface, the remaining 3 superinterfaces from the AAS specification were inlined",
   "contents": [
     {
       "@type": "Component",
       "name": "kind",
-      "schema": "dtmi:digitaltwins:aas:HasKind;30",
+      "schema": "dtmi:digitaltwins:aas:HasKind;1",
       "description": "An element with a kind is an element that can either represent a template or an instance.",
       "comment": "Attention: Inlined from interface HasKind to reduce number of extended interfaces"
     },
@@ -21,7 +21,7 @@
       "name": "semanticId",
       "displayName": "Semantic Id",
       "description": "Identifier of the semantic definition of the element. It is called semantic id of the element.",
-      "target": "dtmi:digitaltwins:aas:Reference;30",
+      "target": "dtmi:digitaltwins:aas:Reference;1",
       "writable": true,
       "maxMultiplicity": 1,
       "comment": "Kind: aggregation, Cardinality: 0..1 Attention: Inlined from interface HasSemantics to reduce number of extended interfaces"
@@ -30,7 +30,7 @@
       "@type": "Relationship",
       "name": "dataSpecification",
       "writable": true,
-      "target": "dtmi:digitaltwins:aas:DataSpecificationContent;30",
+      "target": "dtmi:digitaltwins:aas:DataSpecificationContent;1",
       "comment": "Attention: Inlined from interface HasDataSpecification to reduce number of extended interfaces"
     }
   ]

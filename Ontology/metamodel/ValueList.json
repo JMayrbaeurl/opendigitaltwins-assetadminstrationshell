@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:ValueList;30",
+    "@id": "dtmi:digitaltwins:aas:ValueList;1",
     "@type": "Interface",
     "displayName": "Value List",
     "description": "A set of value reference pairs.",
@@ -12,7 +12,7 @@
             "displayName": "Value Reference Pair",
             "description": "A pair of a value together with its global unique ID.",
             "writable": true,
-            "target": "dtmi:digitaltwins:aas:ValueReferencePair;30"
+            "target": "dtmi:digitaltwins:aas:ValueReferencePair;1"
         }
     ]
   }

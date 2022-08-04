@@ -1,11 +1,11 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:Range;30",
+    "@id": "dtmi:digitaltwins:aas:Range;1",
     "@type": "Interface",
     "displayName": "Range",
     "description": "A range data element is a data element that defines a range with min and max.",
     "extends": [
-        "dtmi:digitaltwins:aas:DataElement;30"
+        "dtmi:digitaltwins:aas:DataElement;1"
     ],
     "comment": "According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02",
     "contents": [

@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:digitaltwins:aas:SubjectAttributes;30",
+  "@id": "dtmi:digitaltwins:aas:SubjectAttributes;1",
   "@type": "Interface",
   "displayName": "Subject Attributes",
   "description": "A set of data elements that further classifies a specific subject",
@@ -12,7 +12,7 @@
       "displayName": "Subject Attribute",
       "comment": "mandatory",
       "description": "A data element that further classifies a specific subject.",
-      "target": "dtmi:digitaltwins:aas:DataElement;30",
+      "target": "dtmi:digitaltwins:aas:DataElement;1",
       "writable": true
     }
   ]

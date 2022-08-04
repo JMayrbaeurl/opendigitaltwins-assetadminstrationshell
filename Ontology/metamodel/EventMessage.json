@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:EventMessage;30",
+    "@id": "dtmi:digitaltwins:aas:EventMessage;1",
     "@type": "Interface",
     "displayName": "Event Message",
     "description": "Defines the necessary information of an event instance sent out or received",
@@ -13,7 +13,7 @@
             "description": "Reference to the source EventElement, including identification of AAS, Submodel, SubmodelElements.",
             "writable": true,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:aas:Reference;30"
+            "target": "dtmi:digitaltwins:aas:Reference;1"
         },
         {
             "@type": "Relationship",
@@ -22,7 +22,7 @@
             "description": "semanticId of the source EventElement, if available",
             "writable": true,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:aas:Reference;30"
+            "target": "dtmi:digitaltwins:aas:Reference;1"
         },
         {
             "@type": "Relationship",
@@ -31,7 +31,7 @@
             "description": "Reference to the Referable, which defines the scope of the event. Can be AAS, Submodel, SubmodelElementCollection or SubmodelElement.",
             "writable": true,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:aas:Reference;30"
+            "target": "dtmi:digitaltwins:aas:Reference;1"
         },
         {
             "@type": "Relationship",
@@ -40,7 +40,7 @@
             "description": "semanticId of the Referable, which defines the scope of the event, if available. See above",
             "writable": true,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:aas:Reference;30"
+            "target": "dtmi:digitaltwins:aas:Reference;1"
         }, 
         {
             "@type": "Property",

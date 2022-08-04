@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:HasExtensions;30",
+    "@id": "dtmi:digitaltwins:aas:HasExtensions;1",
     "@type": "Interface",
     "displayName": "Has Extensions",
     "description": "Element that can be extended by proprietary extensions. Abstract interface",
@@ -12,7 +12,7 @@
             "displayName": "extended by",
             "writable": true,
             "description": "An extension of the element.",
-            "target": "dtmi:digitaltwins:aas:Extension;30"
+            "target": "dtmi:digitaltwins:aas:Extension;1"
         }
     ]
 }

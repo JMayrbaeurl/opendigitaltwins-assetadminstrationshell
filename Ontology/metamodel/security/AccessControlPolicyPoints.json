@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:digitaltwins:aas:AccessControlPolicyPoints;30",
+  "@id": "dtmi:digitaltwins:aas:AccessControlPolicyPoints;1",
   "@type": "Interface",
   "displayName": "AccessControlPolicyPoints",
   "description": "Container for access control policy points.",
@@ -12,7 +12,7 @@
       "displayName": "Policy administration Point",
       "comment": "mandatory",
       "description": "The access control administration policy point of the AAS.",
-      "target": "dtmi:digitaltwins:aas:AccessControl;30",
+      "target": "dtmi:digitaltwins:aas:AccessControl;1",
       "writable": true,
       "maxMultiplicity": 1
     }

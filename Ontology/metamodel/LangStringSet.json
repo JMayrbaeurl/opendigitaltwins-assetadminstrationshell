@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:LangStringSet;30",
+    "@id": "dtmi:digitaltwins:aas:LangStringSet;1",
     "@type": "Interface",
     "displayName": "Language String Set",
     "description": "A set of strings, each annotated by the language of the string. The meaning of the string in each language shall be the same.",

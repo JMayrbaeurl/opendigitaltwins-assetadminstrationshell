@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:HasDataSpecification;30",
+    "@id": "dtmi:digitaltwins:aas:HasDataSpecification;1",
     "@type": "Interface",
     "displayName": "Has Data specification",
     "description": "Element that can be extended by using data specification templates. A data specification template defines a named set of additional attributes an element may or shall have. The data specifications used are explicitly specified with their global id.",
@@ -10,7 +10,7 @@
             "@type": "Relationship",
             "name": "dataSpecification",
             "writable": true,
-            "target": "dtmi:digitaltwins:aas:DataSpecificationContent;30"
+            "target": "dtmi:digitaltwins:aas:DataSpecificationContent;1"
         }
     ]
 }

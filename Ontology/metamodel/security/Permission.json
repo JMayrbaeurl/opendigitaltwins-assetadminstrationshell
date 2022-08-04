@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:digitaltwins:aas:Permission;30",
+  "@id": "dtmi:digitaltwins:aas:Permission;1",
   "@type": "Interface",
   "displayName": "Permission",
   "description": "Description of a single permission.",
@@ -12,7 +12,7 @@
       "displayName": "Permission",
       "comment": "mandatory",
       "description": "Reference to a property that defines the semantics of the permission",
-      "target": "dtmi:digitaltwins:aas:Property;30",
+      "target": "dtmi:digitaltwins:aas:Property;1",
       "maxMultiplicity": 1,
       "writable": true
     },

@@ -1,10 +1,10 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:SubmodelElementList;30",
+    "@id": "dtmi:digitaltwins:aas:SubmodelElementList;1",
     "@type": "Interface",
     "displayName": "Submodel Element List",
     "description": "A submodel element list is an ordered list of submodel elements. The numbering starts with Zero (0).",
-    "extends": ["dtmi:digitaltwins:aas:SubmodelElement;30"],
+    "extends": ["dtmi:digitaltwins:aas:SubmodelElement;1"],
     "comment": "According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02",
     "contents": [
         {
@@ -20,7 +20,7 @@
             "name": "value",
             "displayName": "contains submodel element",
             "description": "Submodel element contained in the list.",
-            "target": "dtmi:digitaltwins:aas:SubmodelElement;30",
+            "target": "dtmi:digitaltwins:aas:SubmodelElement;1",
             "properties": [
                 {
                     "@type": "Property",
@@ -37,7 +37,7 @@
             "name": "semanticIdListElement",
             "displayName": "Semantic Id of list elements",
             "description": "Semantic ID the submodel elements contained in the list match to. It is recommended to use a global reference.",
-            "target": "dtmi:digitaltwins:aas:Reference;30",
+            "target": "dtmi:digitaltwins:aas:Reference;1",
             "maxMultiplicity": 1,
             "writable": true
         },

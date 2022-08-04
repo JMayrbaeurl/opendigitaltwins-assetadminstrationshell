@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:Formula;30",
+    "@id": "dtmi:digitaltwins:aas:Formula;1",
     "@type": "Interface",
     "displayName": "Formula",
     "description": "A formula is used to describe constraints by a logical expression.",

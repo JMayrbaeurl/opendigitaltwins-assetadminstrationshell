@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:digitaltwins:aas:AssetInformation;30",
+  "@id": "dtmi:digitaltwins:aas:AssetInformation;1",
   "@type": "Interface",
   "displayName": "Asset information",
   "description": "In AssetInformation identifying meta data of the asset that is represented by an AAS is defined. The asset may either represent an asset type or an asset instance.",
@@ -11,7 +11,7 @@
       "name": "assetKind",
       "displayName": "Asset kind",
       "description": "Denotes whether the Asset is of kind “Type” or “Instance”.",
-      "schema": "dtmi:digitaltwins:aas:AssetKind;30"
+      "schema": "dtmi:digitaltwins:aas:AssetKind;1"
     },
     {
       "@type": "Relationship",
@@ -20,7 +20,7 @@
       "writable": true,
       "displayName": "Global Asset Id",
       "maxMultiplicity": 1,
-      "target": "dtmi:digitaltwins:aas:Reference;30"
+      "target": "dtmi:digitaltwins:aas:Reference;1"
     },
     {
       "@type": "Relationship",
@@ -28,7 +28,7 @@
       "displayName": "specified by",
       "description": "Additional domain specific specific, typically proprietary Identifier for the asset like e.g. serial number etc",
       "writable": true,
-      "target": "dtmi:digitaltwins:aas:SpecificAssetId;30"
+      "target": "dtmi:digitaltwins:aas:SpecificAssetId;1"
     },
     {
       "@type": "Relationship",
@@ -38,7 +38,7 @@
       "writable": true,
       "minMultiplicity": 0,
       "maxMultiplicity": 1,
-      "target": "dtmi:digitaltwins:aas:Resource;30"
+      "target": "dtmi:digitaltwins:aas:Resource;1"
     }
   ]
 }

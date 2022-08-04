@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:HasSemantics;30",
+    "@id": "dtmi:digitaltwins:aas:HasSemantics;1",
     "@type": "Interface",
     "displayName": "Has Semantics",
     "description": "Element that can have a semantic definition. Abstract interface",
@@ -11,7 +11,7 @@
             "name": "semanticId",
             "displayName": "Semantic Id",
             "description": "Identifier of the semantic definition of the element. It is called semantic id of the element.",
-            "target": "dtmi:digitaltwins:aas:Reference;30",
+            "target": "dtmi:digitaltwins:aas:Reference;1",
             "writable": true,
             "maxMultiplicity": 1,
             "comment": "Kind: aggregation, Cardinality: 0..1"
@@ -21,7 +21,7 @@
             "name": "supplementalSemanticId",
             "displayName": "Supplemental semantic Id",
             "description": "Identifier of a supplemental semantic definition of the element. It is called supplemental semantic ID of the element.",
-            "target": "dtmi:digitaltwins:aas:Reference;30",
+            "target": "dtmi:digitaltwins:aas:Reference;1",
             "writable": true
         }
     ]

@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:AssetKind;30",
+    "@id": "dtmi:digitaltwins:aas:AssetKind;1",
     "@type": "Interface",
     "displayName": "Asset kind",
     "description": "Enumeration for denoting whether an element is a type or an instance. To be used as component in other interfaces",

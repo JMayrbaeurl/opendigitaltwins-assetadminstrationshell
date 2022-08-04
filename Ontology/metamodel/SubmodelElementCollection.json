@@ -12,24 +12,6 @@
       "displayName": "contains",
       "description": "Submodel element contained in the collection.",
       "target": "dtmi:digitaltwins:aas:SubmodelElement;1"
-    },
-    {
-      "@type": "Property",
-      "name": "ordered",
-      "displayName": "ordered",
-      "description": "If ordered=false, then the elements in the collection are not ordered. If ordered=true, then the elements in the collection are ordered.",
-      "comment": "Default = false",
-      "writable": true,
-      "schema": "boolean"
-    },
-    {
-      "@type": "Property",
-      "name": "allowDuplicates",
-      "displayName": "allow duplicates",
-      "description": "If allowDuplicates==true, then it is allowed that the collection contains several elements with the same semantics (i.e. the same semanticId).",
-      "comment": "Default = false",
-      "writable": true,
-      "schema": "boolean"
     }
   ]
 }

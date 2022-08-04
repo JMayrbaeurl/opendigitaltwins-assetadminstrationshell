@@ -43,6 +43,15 @@
         },
         {
             "@type": "Property",
+            "name": "semanticIdListElementValue",
+            "displayName": "Semantic Id value of list elements",
+            "description": "String serialized semantic id value according to Spec 9.2.3 Serialization of Values of Type “Reference”",
+            "comment": "Not part of the AAS Spec. Use alternatively for 'semanticIdListElement'",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
             "name": "typeValueListElement",
             "description": "The submodel element type of the submodel elements contained in the list.",
             "writable": true,

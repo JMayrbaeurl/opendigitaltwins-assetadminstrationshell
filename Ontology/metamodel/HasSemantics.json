@@ -17,6 +17,15 @@
             "comment": "Kind: aggregation, Cardinality: 0..1"
         },
         {
+            "@type": "Property",
+            "name": "semanticIdValue",
+            "displayName": "Semantic Id value",
+            "description": "String serialized semantic id value according to Spec 9.2.3 Serialization of Values of Type “Reference”",
+            "comment": "Not part of the AAS Spec. Use alternatively for 'semanticId'",
+            "schema": "string",
+            "writable": true
+        },
+        {
             "@type": "Relationship",
             "name": "supplementalSemanticId",
             "displayName": "Supplemental semantic Id",

@@ -22,6 +22,15 @@
             "maxMultiplicity": 1,
             "writable": true,
             "target": "dtmi:digitaltwins:aas:Reference;1"
+        },
+        {
+            "@type": "Property",
+            "name": "valueIdValue",
+            "displayName": "Value Id value",
+            "description": "String serialized value id value according to Spec 9.2.3 Serialization of Values of Type “Reference”",
+            "comment": "Not part of the AAS Spec. Use alternatively for 'valueId'",
+            "schema": "string",
+            "writable": true
         }
     ]
   }

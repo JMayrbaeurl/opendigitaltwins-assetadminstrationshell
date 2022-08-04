@@ -41,6 +41,15 @@
         },
         {
             "@type": "Property",
+            "name": "unitIdValue",
+            "displayName": "Unit Id value",
+            "description": "String serialized unit asset id value according to Spec 9.2.3 Serialization of Values of Type “Reference”",
+            "comment": "Not part of the AAS Spec. Use alternatively for 'unitId'",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
             "name": "sourceOfDefinition",
             "displayName": "Source Of Definition",
             "writable": true,

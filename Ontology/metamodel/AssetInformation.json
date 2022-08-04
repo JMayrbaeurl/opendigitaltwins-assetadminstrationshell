@@ -14,6 +14,15 @@
       "schema": "dtmi:digitaltwins:aas:AssetKind;1"
     },
     {
+      "@type": "Property",
+      "name": "globalAssetIdValue",
+      "displayName": "Global Asset Id value",
+      "description": "String serialized Global asset id value according to Spec 9.2.3 Serialization of Values of Type “Reference”",
+      "comment": "Not part of the AAS Spec. Use alternatively for 'globalAssetId'",
+      "schema": "string",
+      "writable": true
+    },
+    {
       "@type": "Relationship",
       "name": "globalAssetId",
       "description": "Reference to either an Asset object or a global reference to the asset the AAS is representing.",
@@ -21,6 +30,15 @@
       "displayName": "Global Asset Id",
       "maxMultiplicity": 1,
       "target": "dtmi:digitaltwins:aas:Reference;1"
+    },
+    {
+      "@type": "Property",
+      "name": "specificAssetIdValues",
+      "displayName": "Specific asset Id values",
+      "description": "Comma separated list of specific asset id values. Name of specific asset id in parentheses. E.g (Serial number)123456798, (FID)SS928734",
+      "comment": "Not part of the AAS Spec. Use alternatively for 'specificAssetId'",
+      "schema": "string",
+      "writable": true
     },
     {
       "@type": "Relationship",

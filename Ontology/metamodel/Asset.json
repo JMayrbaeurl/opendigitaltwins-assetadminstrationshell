@@ -1,9 +1,0 @@
-{
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:digitaltwins:aas:Asset;1",
-    "@type": "Interface",
-    "displayName": "Asset",
-    "description": "An Asset describes meta data of an asset that is represented by an AAS and is identical for all AAS representing this asset.The asset has a globally unique identifier",
-    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
-    "extends": ["dtmi:digitaltwins:aas:Identifiable;1", "dtmi:digitaltwins:aas:HasDataSpecification;1"]
-  }

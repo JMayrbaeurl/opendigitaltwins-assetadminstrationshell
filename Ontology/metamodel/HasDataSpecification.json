@@ -4,7 +4,7 @@
     "@type": "Interface",
     "displayName": "Has Data specification",
     "description": "Element that can be extended by using data specification templates. A data specification template defines a named set of additional attributes an element may or shall have. The data specifications used are explicitly specified with their global id.",
-    "comment": "According Industry 4.0 specification at https://wiki.eclipse.org/BaSyx_/_Documentation_/_AssetAdministrationShell",
+    "comment": "According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02",
     "contents": [
         {
             "@type": "Relationship",

@@ -12,7 +12,7 @@
             "name": "intValue",
             "displayName": "Integer value",
             "description": "Value as int - A signed 4-byte integer",
-            "schema": "float",
+            "schema": "integer",
             "writable": true
         }
     ]

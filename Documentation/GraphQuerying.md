@@ -1,5 +1,7 @@
 # Querying the Azure Digital Twins graph
 
+> **_NOTE:_**  All queries shown below are based on the ['Standard AAS Samples'](../Sample/Std%20AAS%20Samples%20(8)%20ADT%20Explorer%20Export.json) sample. Just create a new Azure Digital Twin instance and import the file with ADT Explorer.
+
 Using the Asset Administration shell Metamodel ontology to model assets in Azure Digital Twins can lead to quite complex graphs. E.g. the standard sample ['01_Festo'](https://admin-shell-io.com/samples/aasx/01_Festo.aasx) looks like the following in 
 [Azure Digital Twins Explorer](https://docs.microsoft.com/en-us/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/):
 
@@ -24,15 +26,14 @@ Using the [ADT Query language](https://docs.microsoft.com/en-us/azure/digital-tw
 
 ```sql
 SELECT * FROM digitaltwins WHERE IS_OF_MODEL('dtmi:digitaltwins:aas:Identifiable;1') 
-AND identification.idType = 'IRI' 
-AND identification.id = 'smart.festo.com/demo/aas/1/1/454576463545648365874'
+AND id = 'smart.festo.com/demo/aas/1/1/454576463545648365874'
 ```
 
 2. Find referable twin with the Identifiable twin Id (from first query)
 
 ```sql
 SELECT referable3 FROM DIGITALTWINS MATCH(identifiable)-[]->(referable1)-[]->(referable2)-[]->(referable3) 
-WHERE identifiable.$dtId = 'Shell_5a0f3d6d-c21e-4704-b09e-eae6fa7dc45b' 
+WHERE identifiable.$dtId = 'Shell_9359cf0b-9765-4a8a-9ac5-de196948114d' 
 AND referable1.idShort = 'Nameplate' AND IS_OF_MODEL(referable1, 'dtmi:digitaltwins:aas:Submodel;1') 
 AND referable2.idShort = 'Marking_RCM' AND IS_OF_MODEL(referable2, 'dtmi:digitaltwins:aas:SubmodelElementCollection;1') 
 AND referable3.idShort = 'RCMLabelingPresent' AND IS_OF_MODEL(referable3, 'dtmi:digitaltwins:aas:Property;1')
@@ -180,4 +181,9 @@ SELECT submodelElement FROM DIGITALTWINS
  AND shell.$dtId = 'Shell_9e0a3ed7-fd9a-4b8b-a203-740e5ca6c76d' 
  AND IS_OF_MODEL(submodel, 'dtmi:digitaltwins:aas:Submodel;1') 
  AND IS_OF_MODEL(submodelElement, 'dtmi:digitaltwins:aas:SubmodelElement;1')
+```
+
+### Getting the number of AAS in the graph
+```sql
+SELECT COUNT() FROM digitaltwins WHERE IS_OF_MODEL('dtmi:digitaltwins:aas:AssetAdministrationShell;1')
 ```

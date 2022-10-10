@@ -29,6 +29,14 @@
       "target": "dtmi:digitaltwins:aas:AssetInformation;1"
     },
     {
+      "@type": "Component",
+      "name": "assetInformationShort",
+      "displayName": "Asset information",
+      "description": "Meta information about the asset the AAS is representing",
+      "comment": "Optional. Short version of the entity based version",
+      "schema": "dtmi:digitaltwins:aas:ext:AssetInfoShort;1"
+    },
+    {
       "@type": "Relationship",
       "name": "submodel",
       "displayName": "Submodel",

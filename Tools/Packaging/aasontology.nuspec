@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Identifier that must be unique within the hosting gallery -->
+        <id>Azure.DigitalTwins.Ontologies.AAS</id>
+
+        <!-- Package version number that is used when resolving dependencies -->
+        <version>3.0-rc02</version>
+
+        <!-- Authors contain text that appears directly on the gallery -->
+        <authors>Juergen Mayrbaeurl</authors>
+
+        <!-- 
+            Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.  
+        -->
+        <owners>jmayrbaeurl</owners>
+        
+         <!-- Project URL provides a link for the gallery -->
+        <projectUrl>https://github.com/JMayrbaeurl/opendigitaltwins-assetadminstrationshell</projectUrl>
+
+         <!-- License information is displayed on the gallery -->
+        <license type="expression">Apache-2.0</license>
+        
+
+        <!-- Icon is used in Visual Studio's package manager UI -->
+        <!--<icon>icon.png</icon> -->
+
+        <!-- 
+            If true, this value prompts the user to accept the license when
+            installing the package. 
+        -->
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+        <!-- Any details about this particular release -->
+        <releaseNotes>Latest release for AAS version 3.0</releaseNotes>
+
+        <!-- 
+            The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal. 
+        -->
+        <description>DTDL v2 implementation of the Industry 4.0 Asset Administration shell ontology</description>
+
+        <!-- Copyright information -->
+        <copyright>Copyright ©2022 Microsoft Corporation</copyright>
+
+        <!-- Tags appear in the gallery and can be used for tag searches -->
+        <tags>azure digitaltwins dtdl manufacturing ontology</tags>
+
+        <!-- Dependencies are automatically installed when the package is installed -->
+    </metadata>
+
+    <!-- A readme.txt to display when the package is installed -->
+    <files>
+        <file src="..\..\Ontology\**\*.*" target="Ontology\" />
+    </files>
+</package>

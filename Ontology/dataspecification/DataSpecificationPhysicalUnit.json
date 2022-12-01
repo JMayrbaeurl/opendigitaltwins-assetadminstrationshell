@@ -1,0 +1,126 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:aas:DataSpecificationPhysicalUnit;1",
+    "@type": "Interface",
+    "displayName": "DataSpecificationPhysicalUnit",
+    "description": "Content of data specification template for concept descriptions for physical units conformant to IEC 61360.",
+    "comment": "According Platform Industrie 4.0. Details of Asset Administration Shell (Version 3.0) Part 1 Release Candidate 02",
+    "extends": [
+        "dtmi:digitaltwins:aas:DataSpecificationContent;1"
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "unitName",
+            "displayName": "Unit name",
+            "description": "Name of the physical unit",
+            "comment": "Mandatory",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "unitSymbol",
+            "displayName": "Unit symbol",
+            "description": "Symbol for the physical unit",
+            "comment": "Mandatory",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Component",
+            "name": "definition",
+            "displayName": "Definition",
+            "description": "Definition in different languages",
+            "comment": "Mandatory",
+            "schema": "dtmi:digitaltwins:aas:LangStringSet;1"
+        },
+        {
+            "@type": "Property",
+            "name": "siNotation",
+            "displayName": "Notation of SI",
+            "description": "Notation of SI physical unit",
+            "comment": "Optional",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "siName",
+            "displayName": "Name of SI",
+            "description": "Name of SI physical unit",
+            "comment": "Optional",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "dinNotation",
+            "displayName": "DIN notation",
+            "description": "Notation of physical unit conformant to DIN",
+            "comment": "Optional",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "eceName",
+            "displayName": "ECE name",
+            "description": "Name of physical unit conformant to ECE",
+            "comment": "Optional",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "eceCode",
+            "displayName": "ECE code",
+            "description": "Code of physical unit conformant to ECE",
+            "comment": "Optional",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "nistName",
+            "displayName": "NIST name",
+            "description": "Name of NIST physical unit",
+            "comment": "Optional",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "sourceOfDefinition",
+            "displayName": "Source of definition",
+            "description": "Source of definition",
+            "comment": "Optional",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "conversionFactor",
+            "displayName": "Conversion factor",
+            "comment": "Optional",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "registrationAuthorityId",
+            "displayName": "Registration authority ID",
+            "comment": "Optional",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "supplier",
+            "displayName": "Supplier",
+            "comment": "Optional",
+            "schema": "string",
+            "writable": true
+        }
+    ]
+}

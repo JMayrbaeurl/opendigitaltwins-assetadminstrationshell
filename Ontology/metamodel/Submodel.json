@@ -44,10 +44,39 @@
     },
     {
       "@type": "Relationship",
-      "name": "dataSpecification",
+      "name": "supplementalSemanticId",
+      "displayName": "Supplemental semantic Id",
+      "description": "Identifier of a supplemental semantic definition of the element. It is called supplemental semantic ID of the element.",
+      "target": "dtmi:digitaltwins:aas:Reference;1",
       "writable": true,
-      "target": "dtmi:digitaltwins:aas:DataSpecificationContent;1",
-      "comment": "Attention: Inlined from interface HasDataSpecification to reduce number of extended interfaces"
+      "comment": "Inlined from interface HasSemantics to reduce number of extended interfaces"
+    },
+    {
+      "@type": "Relationship",
+      "name": "dataSpecification",
+      "displayName": "Data specification template reference",
+      "description": "Global reference to the data specification template used by the element",
+      "comment": "Global reference. Attention: Inlined from interface HasDataSpecification to reduce number of extended interfaces",
+      "writable": true,
+      "target": "dtmi:digitaltwins:aas:Reference;1"
+    },
+    {
+      "@type": "Property",
+      "name": "dataSpecificationTemplateGlobalRefValue",
+      "description": "String serialized data specification template value according to Spec 9.2.3 Serialization of Values of Type “Reference”",
+      "comment": "Not part of the AAS Spec. Use alternatively for 'dataSpecification'",
+      "schema": "string",
+      "displayName": "Data specification template reference value",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "name": "dataSpecificationRef",
+      "displayName": "Data specification template",
+      "description": "Data specification template used by the element",
+      "comment": "Not part of the AAS Spec. Use to link to a DataSpecification twin in the graph",
+      "target": "dtmi:digitaltwins:aas:DataSpecification;1",
+      "writable": true
     }
   ]
 }
